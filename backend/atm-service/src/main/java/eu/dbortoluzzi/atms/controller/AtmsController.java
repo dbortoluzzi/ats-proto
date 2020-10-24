@@ -31,12 +31,12 @@ public class AtmsController {
 		return response;
 	}
 
-	@RequestMapping(value = "/api/atms/query",
+	@RequestMapping(value = "/api/atms/search",
 			method = RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
-	public AtmsResponse getAtmsByQuery(@RequestParam String search) {
-		List<AtmIndexable> atms = atmsRepository.findByQuery(search);
+	public AtmsResponse getAtmsByQuery(@RequestParam String query) {
+		List<AtmIndexable> atms = atmsRepository.findByQuery(query);
 
 		AtmsResponse response = new AtmsResponse();
 		response.setAtms(atms);

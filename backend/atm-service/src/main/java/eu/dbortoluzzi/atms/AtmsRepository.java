@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface AtmsRepository extends MongoRepository<AtmIndexable, String> {
 
-    @Query("{'searchTerm': {$regex: ?0 }})")
+    @Query("{'searchTerm': {$regex : ?0, $options: 'i'}})")
     List<AtmIndexable> findByQuery(String query);
 }
