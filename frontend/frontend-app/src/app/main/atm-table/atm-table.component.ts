@@ -69,6 +69,8 @@ export class AtmTableComponent implements OnInit {
     } else {
       this.dataSource.data = [];
       this.totalCount = 0;
+      this.paginator.pageIndex = 0;
+      this.paginator.pageSize = 5;
     }
   }
 
