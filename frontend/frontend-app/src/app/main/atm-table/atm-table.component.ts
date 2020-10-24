@@ -1,4 +1,4 @@
-import {Component, ViewChild, OnInit, ChangeDetectorRef} from '@angular/core';
+import {Component, ViewChild, OnInit, ChangeDetectorRef, ElementRef} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
 import {Atm} from '../../model/atm';
 import {MatPaginator} from '@angular/material/paginator';
@@ -6,6 +6,8 @@ import {MatTableDataSource} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {AtmService} from "../../atm.service";
 import {logger} from "codelyzer/util/logger";
+import {fromEvent, Subject} from "rxjs/index";
+import {debounceTime, distinctUntilChanged, tap} from "rxjs/internal/operators";
 
 @Component({
   selector: 'app-atm-table',
@@ -18,6 +20,8 @@ export class AtmTableComponent implements OnInit {
   totalCount: number = 0;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort, {}) sort: MatSort;
+  @ViewChild('atmSearchInput') input: ElementRef;
+  public loading$ = new Subject<boolean>();
   filterValue: string;
 
   constructor(private atmService: AtmService, private cdr: ChangeDetectorRef) {
@@ -28,12 +32,26 @@ export class AtmTableComponent implements OnInit {
 
   }
 
+  // TODO:
   onNavigate(id) {
     console.log(`Atm id${id}`)
   }
 
-  onPageChanged(e?): void {
+  ngAfterViewInit() {
+    fromEvent(this.input.nativeElement,'keyup')
+      .pipe(
+        debounceTime(300),
+        distinctUntilChanged(),
+        tap((text) => {
+          this.onSearchEvent();
+        })
+      )
+      .subscribe();
+  }
+
+  onSearchEvent(e?): void {
     if (this.filterValue !== undefined && this.filterValue!== "") {
+      this.loading$.next(true);
       console.log("filter", this.filterValue);
       let pageIndex = this.paginator.pageIndex;
       let pageSize = this.paginator.pageSize;
@@ -46,10 +64,11 @@ export class AtmTableComponent implements OnInit {
         .subscribe(response => {
           this.dataSource.data = response['atms'];
           this.totalCount = response['count'];
-          console.log(this.totalCount);
-          console.log(this.paginator.pageIndex)
-          console.log(this.paginator.pageSize)
+          this.loading$.next(false);
         });
+    } else {
+      this.dataSource.data = [];
+      this.totalCount = 0;
     }
   }
 
