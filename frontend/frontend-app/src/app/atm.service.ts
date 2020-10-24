@@ -12,8 +12,11 @@ export class AtmService {
   constructor(private http: HttpClient) {
   }
 
-  search(query: string) {
-    const params = new HttpParams().append('query', query);
+  search(query: string, page: number, size: number) {
+    const params = new HttpParams()
+      .append('query', query)
+      .append('page', page.toString())
+      .append('size', size.toString());
     return this.http.get<any>(environment.api.atm.search, {params: params});
   }
 }

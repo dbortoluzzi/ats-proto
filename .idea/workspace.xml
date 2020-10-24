@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c172867-4797-4d05-b1ae-6934e92218db" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryCustom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryImpl.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmDataSeeder.java" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmDataSeeder.java" />
-      <change beforePath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmsRepository.java" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepository.java" />
       <change beforePath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java" />
+      <change beforePath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java" afterPath="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" />
+      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/atm-service/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,8 +26,50 @@
       <file leaf-file-name="AtmsRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atm-table.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="53" column="3" lean-forward="false" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atm-table.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="atm.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtmsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="34" column="80" lean-forward="false" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -35,34 +78,8 @@
       <file leaf-file-name="AtmsRepositoryCustom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <marker date="1603556095682" expanded="true" signature="0:29" ph="spring: &lt;1 key&gt;" />
-                <marker date="1603556095682" expanded="true" signature="10:29" ph="data: &lt;1 key&gt;" />
-                <marker date="1603556095682" expanded="true" signature="20:29" ph="mongodb: &lt;1 key&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MongoRepository.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE.jar!/org/springframework/data/mongodb/repository/MongoRepository.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="75">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -71,61 +88,67 @@
       <file leaf-file-name="AtmsRepositoryImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="240">
+              <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar!/org/springframework/data/domain/PageImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1095#1109#0" expanded="true" />
+                <marker date="1603483323147" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1603483323147" expanded="false" signature="155:285" ph="..." />
+                <marker date="1603483323147" expanded="true" signature="519:870" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="619:669" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="686:765" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="779:848" ph="{...}" />
+                <marker date="1603483323147" expanded="false" signature="908:919" ph=" { " />
+                <marker date="1603483323147" expanded="false" signature="998:1004" ph=" }" />
+                <marker date="1603483323147" expanded="true" signature="1037:1146" ph="{...}" />
+                <marker date="1603483323147" expanded="false" signature="1182:1193" ph=" { " />
+                <marker date="1603483323147" expanded="false" signature="1211:1217" ph=" }" />
+                <marker date="1603483323147" expanded="false" signature="1247:1258" ph=" { " />
+                <marker date="1603483323147" expanded="false" signature="1309:1315" ph=" }" />
+                <marker date="1603483323147" expanded="false" signature="1344:1355" ph=" { " />
+                <marker date="1603483323147" expanded="false" signature="1378:1384" ph=" }" />
+                <marker date="1603483323147" expanded="true" signature="1457:1562" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="1593:1921" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="1971:2244" ph="{...}" />
+                <marker date="1603483323147" expanded="true" signature="2272:2442" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AtmsController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java">
+      <file leaf-file-name="AtmsResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="43" column="109" lean-forward="false" selection-start-line="43" selection-start-column="109" selection-end-line="43" selection-end-column="109" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#457#458#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mongo.dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongo.dockerfile">
+      <file leaf-file-name="paginator.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/frontend-app/node_modules/@angular/material/paginator/paginator.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nginx.dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx.dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtmServiceApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmServiceApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -195,32 +218,32 @@
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/model/Address.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/model/GeoLocation.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/model/AtmIndexable.java" />
-        <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmDataSeeder.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmServiceApplication.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/backend/atm-service/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/.gitignore" />
-        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/home/home.component.html" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.styl" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/home/home.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/assets/config.json" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/config.service.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.develop.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.test.ts" />
         <option value="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.ts" />
-        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" />
-        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/AtmsRepository.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepository.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryCustom.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts" />
+        <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java" />
         <option value="$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java" />
+        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" />
       </list>
     </option>
   </component>
@@ -416,6 +439,15 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ats-proto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ats-proto" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ats-proto" type="b2602c69:ProjectViewProjectNode" />
@@ -750,7 +782,7 @@
       <workItem from="1603524241371" duration="78000" />
       <workItem from="1603524322230" duration="2033000" />
       <workItem from="1603526371362" duration="1114000" />
-      <workItem from="1603527508943" duration="23849000" />
+      <workItem from="1603527508943" duration="29953000" />
     </task>
     <task id="LOCAL-00001" summary="first version of atm-table component&#10;fix backend services (case sensitive to case insensitive)">
       <created>1603554094294</created>
@@ -759,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1603554094294</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor to mongo repository, introducing pagination">
+      <created>1603556123800</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603556123800</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30329000" />
+    <option name="totallyTimeSpent" value="36433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1922" height="1053" extended-state="6" />
@@ -845,7 +884,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first version of atm-table component&#10;fix backend services (case sensitive to case insensitive)" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version of atm-table component&#10;fix backend services (case sensitive to case insensitive)" />
+    <MESSAGE value="refactor to mongo repository, introducing pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to mongo repository, introducing pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,32 +894,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/model/GeoLocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-            <element signature="e#467#468#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-            <element signature="e#591#592#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/MessagingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/atm-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -1035,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/home/home.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1145,34 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.6.RELEASE/spring-data-mongodb-2.0.6.RELEASE.jar!/org/springframework/data/mongodb/repository/Query.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1185,14 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1237,39 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1603556095682" expanded="true" signature="0:29" ph="spring: &lt;1 key&gt;" />
-            <marker date="1603556095682" expanded="true" signature="10:29" ph="data: &lt;1 key&gt;" />
-            <marker date="1603556095682" expanded="true" signature="20:29" ph="mongodb: &lt;1 key&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1095#1109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongo.dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1294,18 +1231,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/node_modules/@angular/material/paginator/paginator.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.6.RELEASE/spring-data-commons-2.0.6.RELEASE.jar!/org/springframework/data/domain/PageImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <marker date="1603483323147" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1603483323147" expanded="false" signature="155:285" ph="..." />
+            <marker date="1603483323147" expanded="true" signature="519:870" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="619:669" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="686:765" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="779:848" ph="{...}" />
+            <marker date="1603483323147" expanded="false" signature="908:919" ph=" { " />
+            <marker date="1603483323147" expanded="false" signature="998:1004" ph=" }" />
+            <marker date="1603483323147" expanded="true" signature="1037:1146" ph="{...}" />
+            <marker date="1603483323147" expanded="false" signature="1182:1193" ph=" { " />
+            <marker date="1603483323147" expanded="false" signature="1211:1217" ph=" }" />
+            <marker date="1603483323147" expanded="false" signature="1247:1258" ph=" { " />
+            <marker date="1603483323147" expanded="false" signature="1309:1315" ph=" }" />
+            <marker date="1603483323147" expanded="false" signature="1344:1355" ph=" { " />
+            <marker date="1603483323147" expanded="false" signature="1378:1384" ph=" }" />
+            <marker date="1603483323147" expanded="true" signature="1457:1562" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="1593:1921" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="1971:2244" ph="{...}" />
+            <marker date="1603483323147" expanded="true" signature="2272:2442" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/repository/AtmsRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/atm-service/src/main/java/eu/dbortoluzzi/atms/controller/AtmsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="43" column="109" lean-forward="false" selection-start-line="43" selection-start-column="109" selection-end-line="43" selection-end-column="109" />
+        <state relative-caret-position="138">
+          <caret line="34" column="80" lean-forward="false" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/model/atm.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="53" column="3" lean-forward="false" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
           <folding />
         </state>
       </provider>

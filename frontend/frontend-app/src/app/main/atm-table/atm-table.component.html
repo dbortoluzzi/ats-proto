@@ -1,8 +1,8 @@
 <div class="example-container mat-elevation-z8" >
   <mat-form-field>
-    <mat-label>Filter Product</mat-label>
+    <mat-label>Filter atm</mat-label>
     <input matInput type="text" [(ngModel)]="filterValue"
-           (blur)="filterProduct(filterValue)" placeholder="Search atm">
+           (blur)="onPageChanged()" placeholder="Search atm">
   </mat-form-field>
   <!--<div class="spinner-container" *ngIf="dataSource.loading | async">-->
     <!--<mat-spinner></mat-spinner>-->
@@ -34,6 +34,6 @@
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   </mat-table>
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <mat-paginator (page)='onPageChanged($event)' [length]="totalCount" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
 
 </div>

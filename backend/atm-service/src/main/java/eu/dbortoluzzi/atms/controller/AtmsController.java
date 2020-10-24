@@ -28,11 +28,11 @@ public class AtmsController {
 					method = RequestMethod.GET,
 					produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
+	@CrossOrigin
 	public AtmsResponse getAtms() {
 		List<AtmIndexable> atms = atmsRepository.findAll();
 
-		AtmsResponse response = new AtmsResponse();
-		response.setAtms(atms);
+		AtmsResponse response = new AtmsResponse(atms, Long.valueOf(atms.size()));
 
 		return response;
 	}
@@ -41,12 +41,13 @@ public class AtmsController {
 			method = RequestMethod.GET,
 			produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
+	@CrossOrigin
 	public AtmsResponse getAtmsByQuery(@RequestParam String query, @RequestParam Integer page, @RequestParam Integer size) {
 		PageRequest pageRequest = PageRequest.of(page, size);
 		Page<AtmIndexable> pageResponse = atmsRepositoryCustom.search(query, pageRequest);
 		pageResponse.getContent();
 
-		AtmsResponse response = new AtmsResponse();
+		AtmsResponse response = new AtmsResponse(pageResponse.getContent(), pageResponse.getTotalElements());
 		response.setAtms(pageResponse.getContent());
 
 		return response;

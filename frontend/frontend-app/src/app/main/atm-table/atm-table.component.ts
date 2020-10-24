@@ -1,10 +1,11 @@
-import {Component, ViewChild, OnInit} from '@angular/core';
+import {Component, ViewChild, OnInit, ChangeDetectorRef} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
-import {Atm, atms} from '../../model/atm';
+import {Atm} from '../../model/atm';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {AtmService} from "../../atm.service";
+import {logger} from "codelyzer/util/logger";
 
 @Component({
   selector: 'app-atm-table',
@@ -13,17 +14,13 @@ import {AtmService} from "../../atm.service";
 })
 export class AtmTableComponent implements OnInit {
   displayedColumns = ['type', "address", "lat", "lng"];
-  atms: Atm[] = atms;
-  dataSource = new MatTableDataSource(atms);
+  dataSource = new MatTableDataSource([]);
+  totalCount: number = 0;
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort, {}) sort: MatSort;
   filterValue: string;
 
-  constructor(private atmService: AtmService) { }
-
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+  constructor(private atmService: AtmService, private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit() {
@@ -35,11 +32,23 @@ export class AtmTableComponent implements OnInit {
     console.log(`Atm id${id}`)
   }
 
-  filterProduct(value: string): void {
-    if (value !== undefined && value != "") {
-      console.log("filter", value)
-      this.atmService.search(value).subscribe(response => {
-          this.dataSource = response['atms'];
+  onPageChanged(e?): void {
+    if (this.filterValue !== undefined && this.filterValue!== "") {
+      console.log("filter", this.filterValue);
+      let pageIndex = this.paginator.pageIndex;
+      let pageSize = this.paginator.pageSize;
+      if (e != undefined) {
+        pageIndex = e.pageIndex;
+        pageSize = e.pageSize;
+      }
+      this.atmService
+        .search(this.filterValue, pageIndex, pageSize)
+        .subscribe(response => {
+          this.dataSource.data = response['atms'];
+          this.totalCount = response['count'];
+          console.log(this.totalCount);
+          console.log(this.paginator.pageIndex)
+          console.log(this.paginator.pageSize)
         });
     }
   }
