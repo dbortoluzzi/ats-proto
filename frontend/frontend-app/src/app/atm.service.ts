@@ -13,10 +13,10 @@ export class AtmService {
   }
 
   search(query: string, page: number, size: number) {
-    const params = new HttpParams()
-      .append('query', query)
-      .append('page', page.toString())
-      .append('size', size.toString());
-    return this.http.get<any>(environment.api.atm.search, {params: params});
+    let url = environment.api.atm.search
+      .replace(":query", query)
+      .replace(":page", page.toString())
+      .replace(":size", size.toString());
+    return this.http.get<any>(url);
   }
 }

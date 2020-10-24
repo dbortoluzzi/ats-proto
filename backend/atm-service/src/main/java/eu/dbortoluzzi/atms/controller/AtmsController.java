@@ -37,12 +37,10 @@ public class AtmsController {
 		return response;
 	}
 
-	@RequestMapping(value = "/api/atms/search",
-			method = RequestMethod.GET,
-			produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping("/api/atms/search/{query}/{page}/{size}")
 	@ResponseStatus(HttpStatus.OK)
 	@CrossOrigin
-	public AtmsResponse getAtmsByQuery(@RequestParam String query, @RequestParam Integer page, @RequestParam Integer size) {
+	public AtmsResponse getAtmsByQuery(@PathVariable  String query, @PathVariable  Integer page, @PathVariable Integer size) {
 		PageRequest pageRequest = PageRequest.of(page, size);
 		Page<AtmIndexable> pageResponse = atmsRepositoryCustom.search(query, pageRequest);
 		pageResponse.getContent();
