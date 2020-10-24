@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c172867-4797-4d05-b1ae-6934e92218db" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.html" />
       <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/atm-service/target/" />
@@ -32,9 +31,11 @@
       <file leaf-file-name="atm-table.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="6" column="80" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#90#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -706,7 +707,7 @@
       <workItem from="1603524241371" duration="78000" />
       <workItem from="1603524322230" duration="2033000" />
       <workItem from="1603526371362" duration="1114000" />
-      <workItem from="1603527508943" duration="35242000" />
+      <workItem from="1603527508943" duration="35416000" />
     </task>
     <task id="LOCAL-00001" summary="first version of atm-table component&#10;fix backend services (case sensitive to case insensitive)">
       <created>1603554094294</created>
@@ -743,11 +744,18 @@
       <option name="project" value="LOCAL" />
       <updated>1603574070025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix search with pagination">
+      <created>1603574749980</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603574749980</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41722000" />
+    <option name="totallyTimeSpent" value="41896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1922" height="1053" extended-state="6" />
@@ -768,7 +776,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3047831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3047831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925472" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38709676" sideWeight="0.49786553" order="7" side_tool="false" content_ui="tabs" />
@@ -833,7 +841,8 @@
     <MESSAGE value="fix problem with pagination (BE and FE)" />
     <MESSAGE value="fix keyup and loading" />
     <MESSAGE value="fix stylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix stylist" />
+    <MESSAGE value="fix search with pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix search with pagination" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1287,9 +1296,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/frontend-app/src/app/main/atm-table/atm-table.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="72" column="12" lean-forward="false" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="80" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

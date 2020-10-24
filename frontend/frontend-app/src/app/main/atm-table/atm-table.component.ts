@@ -1,11 +1,8 @@
-import {Component, ViewChild, OnInit, ChangeDetectorRef, ElementRef} from '@angular/core';
+import {ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {MatSort} from '@angular/material/sort';
-import {Atm} from '../../model/atm';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
-import {MatInputModule} from '@angular/material/input';
 import {AtmService} from "../../atm.service";
-import {logger} from "codelyzer/util/logger";
 import {fromEvent, Subject} from "rxjs/index";
 import {debounceTime, distinctUntilChanged, tap} from "rxjs/internal/operators";
 
