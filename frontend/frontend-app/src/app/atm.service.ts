@@ -19,9 +19,6 @@ export class AtmService {
       .replace(":page", page.toString())
       .replace(":size", size.toString());
 
-    let httpOptions = {
-      headers: new HttpHeaders({ 'token': this.authenticationServices.currentUserValue.token })
-    };
-    return this.http.get<any>(url, httpOptions);
+    return this.http.get<any>(url);
   }
 }

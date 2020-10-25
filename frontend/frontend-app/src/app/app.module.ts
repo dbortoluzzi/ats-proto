@@ -8,8 +8,9 @@ import { CoreModule } from './core/core.module';
 import { AuthGuard } from './core/interceptors/auth.guard.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthenticationService} from "./authentication.service";
+import {AuthInterceptor} from "./core/interceptors/auth.interceptor.service";
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import {AuthenticationService} from "./authentication.service";
     CoreModule,
     ReactiveFormsModule
   ],
-  providers: [AuthGuard, AuthenticationService],
+  providers: [AuthGuard, AuthenticationService, HttpClientModule, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
