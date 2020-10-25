@@ -63,7 +63,7 @@ Now, the details.
         - `auth:`: checks if a token is valid
 
 **Database**:
-1. *User* Collection data
+1. *Usersr* Collection data
 2. *Atm* Collection data
 
 ### Front end
@@ -95,7 +95,7 @@ The Angular APP (tries to) respect the "Angular way", using separated components
 
 ## YET TO BE DEVELOPED...
 - Back end: 
-    - encryption of the password, using a hashing algorithm (with random salt) 
+    - encrypt the password, using a more robust algorithm (like PBKDF2, with random salt) 
     - now, for each account, it's available only one `token`, so the credentials (username, password) can be used once at the same time. Adding a list of `token` by user, this limit can be exceeded.
      It can be useful adding an expiration to the token.
     - add a HTTP cache system head of `atm` microservice, caching json results. 
