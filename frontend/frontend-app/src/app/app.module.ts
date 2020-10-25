@@ -9,6 +9,7 @@ import { AuthGuard } from './core/interceptors/auth.guard.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {AuthenticationService} from "./authentication.service";
 
 
 @NgModule({
@@ -26,9 +27,10 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule
   ],
   exports: [
-    CoreModule
+    CoreModule,
+    ReactiveFormsModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

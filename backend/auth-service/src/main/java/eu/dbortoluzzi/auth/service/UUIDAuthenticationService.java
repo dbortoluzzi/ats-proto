@@ -14,13 +14,13 @@ public class UUIDAuthenticationService implements UserAuthenticationService {
     private UserService userService;
 
     @Override
-    public String login(String username, String password) {
+    public User login(String username, String password) {
         return userService.getByUsername(username)
                 .filter(u -> u.getPassword().equals(password))
                 .map(u -> {
                     u.setToken(UUID.randomUUID().toString());
                     userService.save(u);
-                    return u.getToken();
+                    return u;
                 })
                 .orElseThrow(() -> new BadCredentialsException("Invalid username or password."));
     }

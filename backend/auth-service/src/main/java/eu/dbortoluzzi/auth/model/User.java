@@ -1,5 +1,6 @@
 package eu.dbortoluzzi.auth.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -10,11 +11,14 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "users")
 public class User {
     @Id
+    @JsonIgnore
     private String id;
     private String username;
+    @JsonIgnore
     private String password;
     private String token;
 
+    @JsonIgnore
     public String getId() {
         return id;
     }
@@ -31,6 +35,7 @@ public class User {
         this.username = username;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return password;
     }

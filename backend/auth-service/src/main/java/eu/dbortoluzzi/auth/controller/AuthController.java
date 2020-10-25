@@ -1,6 +1,6 @@
 package eu.dbortoluzzi.auth.controller;
 
-import eu.dbortoluzzi.auth.model.User;
+import eu.dbortoluzzi.auth.model.UserForm;
 import eu.dbortoluzzi.auth.repository.UserAuthenticationService;
 import eu.dbortoluzzi.auth.service.UserRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +18,7 @@ public class AuthController {
 	private UserAuthenticationService authenticationService;
 
 	@PostMapping("/api/auth/register")
+	@CrossOrigin
 	public Object register(
 			@RequestParam("username") String username,
 			@RequestParam("password") String password) {
@@ -30,24 +31,23 @@ public class AuthController {
 	}
 
 	@PostMapping("/api/auth/login")
-	public Object login(
-			@RequestParam("username") String username,
-			@RequestParam("password") String password) {
+	@CrossOrigin
+	public Object login(@RequestBody UserForm user) {
 		try {
 			return authenticationService
-					.login(username, password);
+					.login(user.getUsername(), user.getPassword());
 		} catch (BadCredentialsException e) {
 			return ResponseEntity.status(UNAUTHORIZED).body(e.getMessage());
 		}
 	}
 
 	@GetMapping("/api/auth/auth")
+	@CrossOrigin
 	public Object auth(
 			@RequestHeader("token") String token) {
 		try {
-			User user = authenticationService
+			return authenticationService
 					.authenticateByToken(token);
-			return "Authorized";
 		} catch (BadCredentialsException e) {
 			return ResponseEntity.status(UNAUTHORIZED).body(e.getMessage());
 		}

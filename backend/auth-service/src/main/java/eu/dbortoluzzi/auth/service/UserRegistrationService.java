@@ -24,6 +24,6 @@ public class UserRegistrationService {
         user.setPassword(password);
         userService.save(user);
 
-        return authenticationService.login(username, password);
+        return authenticationService.login(username, password).getToken();
     }
 }
