@@ -3,14 +3,19 @@
 This project follows some principles of microservices architecture:
 - **Single responsibility** :
 a single microservice must be responsible for a specific feature or functionality or an aggregation of other bounded contexts.
+
 - **Domain driven design**:
 a single microservice is built around a business requirement, isolated from others. The business requirement should represents a real-problem, covered in a single microservice.  
+
 - **Encapsulation**:
 a microservice should be consumed through a simple API, and must not reveal internal details, but it should hide the internal complexity, also for security reasons.
+
 - **Isolation**:
 a microservice should not share resources with other microservices, like databases or file system. It also should be fault tolerant to crashes of other microservices.
+
 - **Location transparency**
 a microservice should not reveal its physical location (ip address or something else), but it should consumed through an API gateway.
+
 - **Authentication**
 a microservice should be consumed through an authentication system.
 
@@ -49,6 +54,7 @@ Now, the details.
     - At the boot time, it downloads the collection of atms and it stores in the mongodb database, creating for each document an indexable field with the concatenation of its attributes.
     - So, it meets the requirements in a simple way, exposing a very efficient route in the controller to get all the atms or search them (with a full text). 
     - The search route is paginated, so the GUI can use the pagination. 
+    
 2. *auth*
     - At the boot time, it register a *fake* user
     - It exposes three routes:
@@ -68,10 +74,15 @@ Single page app with:
 
 The Angular APP (tries to) respect the "Angular way", using separated components:
 - **atm-table**: component with an angular material table with pagination and a text field search
+
 - home: ...
+
 - container: ...
+
 - login: ...
+
 - footer: ...
+
 - header: ...
 
 **services**:
