@@ -37,7 +37,7 @@ This picture represents in a simple way the architecture used:
 2. **Nginx**: using Nginx like an API gateway, it's possible to hide the docker network and the real IPs of microservices, operating like a reverse proxy and exposing only the necessary HTTP ports (:80).
 It permits also to create an authentication system in front of the microservices, using properly the `auth_pass` command in nginx.conf, without using some kind of authentication specified of a single microservice (like spring-boot-security), mixing heterogeneous microservices.
 
-3. **Mongodb**: now, for development purpose, the application it's using 1 only NOSQL database instance containerized, but it's possible to create multiple instances of mongodb (also in cluster), each one used by different microservices.    
+3. **Mongodb**: now, for development purpose, the application is using 1 only NOSQL database instance containerized, but it's possible to create multiple instances of mongodb (also in cluster), each one used by different microservices.    
 
 4. **Spring boot microservice**: at the moment there are two microservices *atm*, *auth*, providing respectively the *Atm Business Context* and the *Authentication Business Context* using spring-boot application, but it's possible add others, creating the backend-service and add the related configuration to `nginx.conf`
 
@@ -90,12 +90,14 @@ The Angular APP (tries to) respect the "Angular way", using separated components
 - *authentication.service.ts*: it provides the logic to talk with `auth` microservice
 
 **interceptor**:
-- *auth*: intercepts the http requests, adding in the http header the private `token` in a transparente way. it intercepts also the error 401 (UNAUTHORIZED), returning the flow to the login page.
+- *auth*: intercepts the http requests, adding in the http header the private `token` in a transparent way. it intercepts also the error 401 (UNAUTHORIZED), returning the flow to the login page.
 - *auth-guard*: check every page changes if the `currentUser` object is persisted in the LocalStorage of the browser. If it's not present, return to login page.
 
 ## YET TO BE DEVELOPED...
 - Back end: 
     - encryption of the password, using a hashing algorithm (with random salt) 
+    - now, for each account, it's available only one `token`, so the credentials (username, password) can be used once at the same time. Adding a list of `token` by user, this limit can be exceeded.
+     It can be useful adding an expiration to the token.
 - Front end:
     - dockerization of the Angular APP (now it's bundled inside the NGINX container) 
     - registration of an account
