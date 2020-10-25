@@ -14,7 +14,7 @@ a microservice should be consumed through a simple API, and must not reveal inte
 a microservice should not share resources with other microservices, like databases or file system. It also should be fault tolerant to crashes of other microservices.
 
 - **Location transparency**
-a microservice should not reveal its physical location (ip address or something else), but it should consumed through an API gateway.
+a microservice should not reveal its physical location (ip address or something else), but it should be consumed through an API gateway.
 
 - **Authentication**
 a microservice should be consumed through an authentication system.
@@ -56,11 +56,11 @@ Now, the details.
     - The search route is paginated, so the GUI can use the pagination. 
     
 2. *auth*
-    - At the boot time, it register a *fake* user
+    - At the boot time, it registers a *fake* user
     - It exposes three routes:
-        - `register`: register a new account, using username and password
-        - `login`: authenticate user, using username and password provided, and responds with a new valid *token*
-        - `auth:`: check if a token is valid
+        - `register`: registers a new account, using username and password
+        - `login`: authenticates user, using username and password provided, and responds with a new valid *token*
+        - `auth:`: checks if a token is valid
 
 **Database**:
 1. *User* Collection data
@@ -91,13 +91,14 @@ The Angular APP (tries to) respect the "Angular way", using separated components
 
 **interceptor**:
 - *auth*: intercepts the http requests, adding in the http header the private `token` in a transparent way. it intercepts also the error 401 (UNAUTHORIZED), returning the flow to the login page.
-- *auth-guard*: check every page changes if the `currentUser` object is persisted in the LocalStorage of the browser. If it's not present, return to login page.
+- *auth-guard*: check every page changes if the `currentUser` object is persisted in the LocalStorage of the browser. If it's not present, returns to login page.
 
 ## YET TO BE DEVELOPED...
 - Back end: 
     - encryption of the password, using a hashing algorithm (with random salt) 
     - now, for each account, it's available only one `token`, so the credentials (username, password) can be used once at the same time. Adding a list of `token` by user, this limit can be exceeded.
      It can be useful adding an expiration to the token.
+    - add a HTTP cache system head of `atm` microservice, caching json results. 
 - Front end:
     - dockerization of the Angular APP (now it's bundled inside the NGINX container) 
     - registration of an account

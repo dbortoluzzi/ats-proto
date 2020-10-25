@@ -1,7 +1,6 @@
 package eu.dbortoluzzi.auth.service;
 
 import eu.dbortoluzzi.auth.model.User;
-import eu.dbortoluzzi.auth.repository.UserAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Service;
@@ -9,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.UUID;
 
 @Service
-public class UUIDAuthenticationService implements UserAuthenticationService {
+public class UUIDAuthenticationService implements IUserAuthenticationService {
     @Autowired
     private UserService userService;
 

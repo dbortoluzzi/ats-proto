@@ -1,7 +1,6 @@
 package eu.dbortoluzzi.auth.service;
 
 import eu.dbortoluzzi.auth.model.User;
-import eu.dbortoluzzi.auth.repository.UserAuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +9,7 @@ public class UserRegistrationService {
     @Autowired
     private UserService userService;
     @Autowired
-    private UserAuthenticationService authenticationService;
+    private IUserAuthenticationService authenticationService;
 
     // TODO: compute hash of password
     public String register(String username, String password) throws IllegalArgumentException {

@@ -1,7 +1,7 @@
 package eu.dbortoluzzi.auth.controller;
 
 import eu.dbortoluzzi.auth.model.UserForm;
-import eu.dbortoluzzi.auth.repository.UserAuthenticationService;
+import eu.dbortoluzzi.auth.service.IUserAuthenticationService;
 import eu.dbortoluzzi.auth.service.UserRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ public class AuthController {
 	@Autowired
 	private UserRegistrationService registrationService;
 	@Autowired
-	private UserAuthenticationService authenticationService;
+	private IUserAuthenticationService authenticationService;
 
 	@PostMapping("/api/auth/register")
 	@CrossOrigin
