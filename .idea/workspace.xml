@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c172867-4797-4d05-b1ae-6934e92218db" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/model/UserForm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/authentication.service.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/authentication.service.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/model/user.ts" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/controller/AuthController.java" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/controller/AuthController.java" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/model/User.java" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/model/User.java" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/repository/UserAuthenticationService.java" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/repository/UserAuthenticationService.java" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/service/UUIDAuthenticationService.java" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/service/UUIDAuthenticationService.java" />
-      <change beforePath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/service/UserRegistrationService.java" afterPath="$PROJECT_DIR$/backend/auth-service/src/main/java/eu/dbortoluzzi/auth/service/UserRegistrationService.java" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.module.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/atm.service.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/interceptors/auth.guard.service.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/core/interceptors/auth.guard.service.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.component.html" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.component.html" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.component.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.component.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.module.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/app/main/login/login.module.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.develop.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.develop.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.prod.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.test.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.test.ts" />
-      <change beforePath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.ts" afterPath="$PROJECT_DIR$/frontend/frontend-app/src/environments/environment.ts" />
       <change beforePath="$PROJECT_DIR$/nginx.conf" afterPath="$PROJECT_DIR$/nginx.conf" />
     </list>
     <ignored path="$PROJECT_DIR$/backend/atm-service/target/" />
@@ -81,8 +62,8 @@
       <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="390">
+              <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -957,7 +938,7 @@
       <workItem from="1603524322230" duration="2033000" />
       <workItem from="1603526371362" duration="1114000" />
       <workItem from="1603527508943" duration="37021000" />
-      <workItem from="1603610219604" duration="14636000" />
+      <workItem from="1603610219604" duration="15027000" />
     </task>
     <task id="LOCAL-00001" summary="first version of atm-table component&#10;fix backend services (case sensitive to case insensitive)">
       <created>1603554094294</created>
@@ -1029,7 +1010,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603619189432</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add login in web app, with various fixes on backend and nginx configuration">
+      <created>1603624927935</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603624927935</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1047,7 +1035,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59385000" />
+    <option name="totallyTimeSpent" value="59776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1922" height="1053" extended-state="6" />
@@ -1164,7 +1152,8 @@
     <MESSAGE value="add test with embedded mongo" />
     <MESSAGE value="add auth-service: /login, /auth&#10;changes to nginx, using auth_request" />
     <MESSAGE value="fix push" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix push" />
+    <MESSAGE value="add login in web app, with various fixes on backend and nginx configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="add login in web app, with various fixes on backend and nginx configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1628,8 +1617,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+        <state relative-caret-position="390">
+          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding />
         </state>
       </provider>
