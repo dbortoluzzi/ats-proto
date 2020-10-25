@@ -24,10 +24,10 @@
               />
             </div>
             <div class="form-group">
-              <input type="submit" class="btn-login shadow" value="Login" />
+              <input type="submit" class="btn-login shadow" value="Login" [disabled]="!loginForm.valid"/>
             </div>
-            <div class="form-group">
-              <a href="#" class="forget-label">Forget Password?</a>
+            <div class="alert alert-danger" role="alert"  *ngIf="loginForm.hasError('accessDenied')">
+              Authentication error
             </div>
           </form>
         </div>

@@ -41,7 +41,6 @@ export class LoginComponent implements OnInit {
   get f() { return this.loginForm.controls; }
 
   onSubmit() {
-    console.log("submit")
     this.submitted = true;
 
     // stop here if form is invalid
@@ -58,6 +57,8 @@ export class LoginComponent implements OnInit {
         },
         error => {
           this.loading = false;
+          this.loginForm.setErrors({ ...this.loginForm.errors, 'accessDenied': true });
+          return;
         });
   }
 }
