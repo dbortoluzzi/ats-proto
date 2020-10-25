@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backend/atm-service/atm-service.iml" filepath="$PROJECT_DIR$/backend/atm-service/atm-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ats-proto.iml" filepath="$PROJECT_DIR$/.idea/ats-proto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/auth-service/auth-service.iml" filepath="$PROJECT_DIR$/backend/auth-service/auth-service.iml" />
     </modules>
   </component>
 </project>
